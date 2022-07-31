@@ -10,21 +10,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'gradle clean build -x test'
+                //sh 'gradle clean build -x test'
             }
         }
         stage('Test'){
             steps{
                 echo 'Running automated tests'
-                sh "gradle clean test -Denvironment=qa -Dtags=walkthrough aggregate"
+                //sh "gradle clean test -Denvironment=qa -Dtags=walkthrough aggregate"
             }
         }
     }
 
-    post {
-        always {
-            junit './target/site/serenity/SERENITY-JUNIT-*.xml'
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'htmlReport', reportFiles: 'reporte.html', reportName: 'HTML Report', reportTitles: ''])
-        }
-    }
+//     post {
+//         always {
+//             junit './target/site/serenity/SERENITY-JUNIT-*.xml'
+//             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'htmlReport', reportFiles: 'reporte.html', reportName: 'HTML Report', reportTitles: ''])
+//         }
+//     }
 }

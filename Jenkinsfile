@@ -2,11 +2,15 @@ pipeline {
     
     agent any
 
-    stages {
-        stage("build") {
-            steps {
-                echo 'building the application ...'
+    options{
+            ansiColor('xterm')
+    }
 
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building the application ...'
+                sh 'gradle clean build -x test'
             }
         }
 

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login operations" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-31T21:12:06" hostname="DESKTOP-M931P7I" time="11.646">
+  <properties/>
+  <testcase name="Login to the web" classname="Login operations" time="11.646"/>
+  <system-out><![CDATA[16:12:07.147 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/ALEJANDRO%20BUSTOS%20GÓMEZ/PROYECTOS/TESTING%20PROJECTS/EnvironmentVariablesExample/src/test/resources/features/login.feature
+16:12:07.273 [Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login to the web(login-operations;login-to-the-web)
+--------------------------------------------------------------------------------
+16:12:07.274 [Test worker] INFO net.thucydides.core.model.TestOutcome - SetUserStory Login operations
+16:12:07.286 [Test worker] INFO net.thucydides.core.model.TestOutcome - SetUserStory Login operations
+16:12:07.368 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Added feature Login operations
+16:12:07.508 ?[92m|-- Given that "user" has opened the web site?[0m
+16:12:08.079 ?[92m|---- User go to?[0m
+16:12:08.082 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginStepDefinitions.thatUserHasOpenedTheWebSite - performAs
+16:12:08.109 ?[92m|------ user opens the https://the-internet.herokuapp.com/login?[0m
+16:12:08.110 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: GoTo.performAs - {0} opens the #url
+16:12:08.199 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+16:12:08.911 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=103 in cache (valid until 16:23:54 31/07/2022 COT)
+16:12:08.913 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome103=103.0.5060.134 in cache (valid until 15:23:54 01/08/2022 COT)
+16:12:08.913 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 103.0.5060.134 (resolved driver for Chrome 103)
+16:12:08.921 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 103.0.5060.134 found in cache
+16:12:08.922 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\alebu\.cache\selenium\chromedriver\win32\103.0.5060.134\chromedriver.exe
+16:12:09.675 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+16:12:09.675 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, autodownload: true, browserName: chrome, chrome.silentOutput: true, driver: chrome, goog:chromeOptions: {args: [--window-size=1366,728, --ignore-certificate-errors, --disable-popup-blocking, --disable-infobars, --log-level=3], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+16:12:13.421 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
+16:12:13.422 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
+16:12:13.664 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\ALEJANDRO BUSTOS GÓMEZ\PROYECTOS\TESTING PROJECTS\EnvironmentVariablesExample\target\site\serenity\0b88a58db228afcd9fac90bc766f959c6b4a3f7d9e64a4509550270d46f529d2.png
+16:12:13.669 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} opens the #url
+16:12:13.696 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: performAs
+16:12:13.848 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\ALEJANDRO BUSTOS GÓMEZ\PROYECTOS\TESTING PROJECTS\EnvironmentVariablesExample\target\site\serenity\0b88a58db228afcd9fac90bc766f959c6b4a3f7d9e64a4509550270d46f529d2.png
+16:12:13.850 ?[92m|-- When he fills the login form?[0m
+16:12:13.867 ?[92m|---- User fill the form?[0m
+16:12:13.870 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginStepDefinitions.heFillsTheLoginForm - performAs
+16:12:13.914 ?[92m|------ user enters 'tomsmith' into Label input username?[0m
+16:12:13.919 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: FillTheForm.performAs - {0} enters #theTextAsAString into #target
+16:12:13.980 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Label input username
+16:12:14.765 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\ALEJANDRO BUSTOS GÓMEZ\PROYECTOS\TESTING PROJECTS\EnvironmentVariablesExample\target\site\serenity\897185e9e11503dcc68a6c4a1e48f9b7d3c97a5891c6478e30881dee2464907b.png
+16:12:14.765 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
+16:12:14.765 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-9050109181474309000
+16:12:14.766 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\ALEJANDRO BUSTOS GÓMEZ\PROYECTOS\TESTING PROJECTS\EnvironmentVariablesExample\target\site\serenity\897185e9e11503dcc68a6c4a1e48f9b7d3c97a5891c6478e30881dee2464907b.png
+16:12:14.769 ?[92m|------ user enters 'SuperSecretPassword!' into Label input PASSWORD?[0m
+16:12:14.774 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: FillTheForm.performAs - {0} enters #theTextAsAString into #target
+16:12:14.777 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Label input PASSWORD
+16:12:15.641 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\ALEJANDRO BUSTOS GÓMEZ\PROYECTOS\TESTING PROJECTS\EnvironmentVariablesExample\target\site\serenity\0c294e0bbc8b205929540870a41e7aced374055fc8d4880f2db6c92bda10c75b.png
+16:12:15.641 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
+16:12:15.641 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-113856814529502411
+16:12:15.641 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\ALEJANDRO BUSTOS GÓMEZ\PROYECTOS\TESTING PROJECTS\EnvironmentVariablesExample\target\site\serenity\0c294e0bbc8b205929540870a41e7aced374055fc8d4880f2db6c92bda10c75b.png
+16:12:15.645 ?[92m|------ user clicks on Login button?[0m
+16:12:15.650 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: FillTheForm.performAs - {0} clicks on #target
+16:12:15.651 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+16:12:16.554 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\ALEJANDRO BUSTOS GÓMEZ\PROYECTOS\TESTING PROJECTS\EnvironmentVariablesExample\target\site\serenity\b7c34f7a6e8a84edaa40ce5288c6056c5e912207dc50c229b3fc0f3989f6840e.png
+16:12:16.554 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+16:12:16.554 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-1423388649276531494
+16:12:16.555 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\ALEJANDRO BUSTOS GÓMEZ\PROYECTOS\TESTING PROJECTS\EnvironmentVariablesExample\target\site\serenity\b7c34f7a6e8a84edaa40ce5288c6056c5e912207dc50c229b3fc0f3989f6840e.png
+16:12:16.579 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: performAs
+16:12:16.602 ?[92m|-- Then he should access to his account?[0m
+16:12:16.768 ?[92m|---- Then is logged?[0m
+16:12:16.856 ?[92m|------ user should see Login message with text value that contains: <[You logged into a secure area!]>?[0m
+16:12:16.865 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: IsLogged.answeredBy - {0} should see #description
+16:12:16.868 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login message
+16:12:17.143 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\ALEJANDRO BUSTOS GÓMEZ\PROYECTOS\TESTING PROJECTS\EnvironmentVariablesExample\target\site\serenity\b7c34f7a6e8a84edaa40ce5288c6056c5e912207dc50c229b3fc0f3989f6840e.png
+16:12:17.144 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} should see #description
+16:12:17.193 [Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login to the web
+----------------------------------------------------------------------?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 19438
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+jul 31, 2022 4:12:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+</testsuite>

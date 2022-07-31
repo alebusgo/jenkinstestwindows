@@ -2,29 +2,28 @@ pipeline {
     
     agent any
 
-    options{
-        ansiColor('xterm')
-    }
-
     stages {
-        stage('Build') {
+        stage("build") {
             steps {
-                echo 'Building..'
-                //sh 'gradle clean build -x test'
+                echo 'building the application ...'
+
             }
         }
-        stage('Test'){
-            steps{
-                echo 'Running automated tests'
-                //sh "gradle clean test -Denvironment=qa -Dtags=walkthrough aggregate"
-            }
+
+        stage("test") {
+             steps {
+                echo 'executing automated test'
+
+             }
         }
     }
-
-//     post {
-//         always {
-//             junit './target/site/serenity/SERENITY-JUNIT-*.xml'
-//             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'htmlReport', reportFiles: 'reporte.html', reportName: 'HTML Report', reportTitles: ''])
-//         }
-//     }
 }
+
+
+
+
+
+
+
+
+

@@ -6,14 +6,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the application ...'
-                sh 'gradle clean build -x test'
+                bat 'gradle clean build -x test'
             }
         }
 
         stage("test1") {
              steps {
                 echo 'excecuting automated test1'
-                sh 'gradle clean test aggregate'
+                bat 'gradle clean test aggregate'
 
              }
         }
@@ -21,7 +21,7 @@ pipeline {
         stage("test2") {
             steps {
                 echo 'excecuting automated test2'
-                sh 'gradle clean test -Denvironment=qa aggregate'
+                bat 'gradle clean test -Denvironment=qa aggregate'
 
             }
         }
@@ -29,7 +29,7 @@ pipeline {
         stage("test3") {
             steps {
                 echo 'excecuting automated test3'
-                sh 'gradle clean test -Denvironment=prov aggregate'
+                bat 'gradle clean test -Denvironment=prov aggregate'
 
             }
 

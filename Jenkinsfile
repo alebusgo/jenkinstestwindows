@@ -1,6 +1,10 @@
 pipeline {
 
     agent any
+    
+    tools {
+        git 'GitWin'
+    }
 
     stages {
         stage('Build') {

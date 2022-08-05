@@ -2,15 +2,13 @@ pipeline {
 
     agent any
     
-    tools {
-        git 'GitWin'
-    }
-
     stages {
         stage('Build') {
             steps {
                 echo 'Building the application ...'
-                bat 'gradle clean build -x test'
+                withGradle(){
+                    bat 'gradlew clean build -x test'
+                }
             }
         }
 
@@ -18,7 +16,6 @@ pipeline {
              steps {
                 echo 'excecuting automated test1'
                 bat 'gradle clean test aggregate'
-
              }
         }
 

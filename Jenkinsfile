@@ -35,8 +35,12 @@ pipeline {
             }
 
         }
-
-
+    }
+    post {
+        always {
+            junit './target/site/serenity/SERENITY-JUNIT-*.xml'
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'htmlReport', reportFiles: 'reporte.html', reportName: 'HTML Report', reportTitles: ''])
+        }
     }
 }
 

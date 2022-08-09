@@ -38,7 +38,7 @@ pipeline {
     }
     post {
         always {
-            junit '/workspace/my-first-pipe_develop/target/site/serenity/index.html'
+            junit '/target/site/serenity/index.html'
         }
     }
 }

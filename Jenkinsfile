@@ -38,7 +38,7 @@ pipeline {
     }
     post {
         always {
-            junit 'build/reports/**/*.xml'
+            junit 'C:/ProgramData/Jenkins/.jenkins/workspace/my-first-pipe_develop/target/site/serenity/index.html'
         }
     }
 }

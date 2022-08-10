@@ -6,19 +6,9 @@ pipeline {
                 echo 'Building the application ...'
                 withGradle(){
                     bat 'gradlew clean build -x test'
+                    bat 'gradle clean test aggregate'
                 }
             }
-        }
-        stage("test1") {
-             steps {
-                echo 'excecuting automated test1'
-                bat 'gradle clean test aggregate'
-             }
-        }
-    }
-    post {
-        always {
-            junit '/target/site/serenity/index.html'
         }
     }
 }

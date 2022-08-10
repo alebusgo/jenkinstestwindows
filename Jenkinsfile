@@ -15,11 +15,6 @@ pipeline {
              }
         }
     }
-    post {
-        always {
-            junit '/target/site/serenity/index.html'
-        }
-    }
 }
 
 

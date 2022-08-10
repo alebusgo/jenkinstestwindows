@@ -13,9 +13,7 @@ pipeline {
         stage("test1") {
              steps {
                 echo 'excecuting automated test1'
-                withGradle(){
-                    bat 'gradlew clean test aggregate'
-                }
+                bat 'gradlew clean test aggregate'
              }
         }
     }

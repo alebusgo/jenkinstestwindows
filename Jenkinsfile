@@ -17,6 +17,11 @@ pipeline {
              }
         }
     }
+    post {
+        always {
+            junit './target/site/serenity/SERENITY-JUNIT_*.xml'
+        }
+    }
 }
 
 

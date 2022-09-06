@@ -19,16 +19,8 @@ pipeline {
     }
     post {
         always {
-            junit 'target/site/serenity/index.html'
-            publishHTML (target: [
-            allowMissing: false,
-            alwaysLinkToLastBuild: false,
-            keepAll: false,
-            reportDir: 'target/site/serenity/',
-            reportFiles: 'index.html',
-            reportName: 'HTML Report',
-            reportTitles: ''
-            ])
+            junit 'target/site/serenity/SERENITY-JUNIT-*.xml'
+            
         }
     }
 }

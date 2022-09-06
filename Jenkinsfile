@@ -19,7 +19,7 @@ pipeline {
     }
     post {
         always {
-            junit 'target/site/serenity/SERENITY-JUNIT-*.xml'
+            junit 'target/site/serenity/index.html'
             publishHTML (target: [
             allowMissing: false,
             alwaysLinkToLastBuild: false,
